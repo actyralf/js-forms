@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section>
+      <h2 id="form-heading">Ice cream order form</h2>
+      <p id="form-description">
+        Please select your flavor and we will deliver immediately!
+      </p>
+
+      <form
+        aria-labeledby="form-heading"
+        aria-describedby="form-description"
+        data-js="form"
+      >
+        <fieldset>
+          <legend>My favourite ice cream</legend>
+          <label for="flavor">Flavor</label>
+          <select id="flavor" name="flavor">
+            <option value="vanilla">Vanilla</option>
+            <option value="chocolate">Chocolate</option>
+            <option value="chocolate">Banana</option>
+            <option value="chocolate">Strawberry</option>
+          </select>
+
+          <label for="balls">Balls</label>
+          <input id="balls" type="number" name="balls" />
+
+          <label>How do you want your ice cream to come?</label>
+          <div>
+            <input
+              type="radio"
+              id="cone"
+              name="container"
+              value="cone"
+              checked
+            />
+            <label for="cone">In a cone</label>
+          </div>
+          <div>
+            <input type="radio" id="cup" name="container" value="cup" />
+            <label for="cup">In a cup</label>
+          </div>
+          <div>
+            <input type="checkbox" name="extra-cream" id="extra-cream" />
+            <label for="extra-cream">I want extra cream!</label>
+          </div>
+
+          <label for="hobbies">Additional wishes</label>
+          <textarea name="hobbies" id="hobbies" cols="30" rows="10"></textarea>
+        </fieldset>
+        <button>Deliver!</button>
+      </form>
+    </section>
+  </body>
+</html>
